@@ -17,13 +17,13 @@
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | Å |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  Ø  |  Æ  |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  UP  |  DWN  |  LFT  | RGT  |
-            //                    | GUI | LWR | ENT |   | SPC | RSE  | ALT |
+            //                    | GUI | LWR | ENT |   | SPC | RSE  | @ |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I     &kp O     &kp P          &kp BACKSLASH
-&kp SQT    &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K     &kp L     &kp BACKSLASH  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp UP    &kp DOWN  &kp LEFT       &kp RIGHT
-                         &kp LGUI  &mo 1  &kp RET    &kp SPACE  &mo 2  &kp LGUI
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T      &kp Y      &kp U  &kp I          &kp O     &kp P     &kp LEFT_BRACKET
+&kp SQT    &kp A  &kp S  &kp D     &kp F  &kp G      &kp H      &kp J  &kp K          &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp N      &kp M  &kp UP         &kp DOWN  &kp LEFT  &kp RIGHT
+                         &kp LGUI  &mo 1  &kp RET    &kp SPACE  &mo 2  &kp BACKSLASH
             >;
         };
 
@@ -35,10 +35,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3          &kp N4          &kp N5             &kp N6         &kp N7            &kp N8       &kp N9     &kp N0         &kp BSPC
-&bt BT_CLR  &trans  &trans  &trans    &trans    &trans       &kp LEFT       &kp DOWN          &kp UP       &kp RIGHT  &kp PIPE       &kp DOUBLE_QUOTES
-&kp LSHFT   &kp PLUS      &kp MINUS     &kp UNDERSCORE  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LESS_THAN  &kp GREATER_THAN  &kp PERCENT  &kp EQUAL  &kp AMPERSAND  &kp QUESTION
-                                        &kp LGUI        &trans          &kp SPACE          &kp RET        &trans            &kp RALT
+&kp TAB     &kp N1    &kp N2     &kp N3          &kp N4          &kp N5             &kp N6         &kp N7            &kp N8       &kp N9     &kp N0         &kp BSPC
+&bt BT_CLR  &trans    &trans     &trans          &trans          &trans             &kp LEFT       &kp DOWN          &kp UP       &kp RIGHT  &kp PIPE       &kp DOUBLE_QUOTES
+&kp LSHFT   &kp PLUS  &kp MINUS  &kp UNDERSCORE  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LESS_THAN  &kp GREATER_THAN  &kp PERCENT  &kp EQUAL  &kp AMPERSAND  &kp QUESTION
+                                 &kp LGUI        &trans          &kp SPACE          &kp RET        &trans            &kp RALT
             >;
         };
 
