@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     combos {
@@ -19,7 +20,22 @@
 
         Backspace {
             bindings = <&kp BACKSPACE>;
+            key-positions = <6 7>;
+        };
+
+        copilot {
+            bindings = <&kp LA(TAB)>;
             key-positions = <10 11>;
+        };
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
+        };
+
+        Caps {
+            bindings = <&kt CLCK>;
+            key-positions = <24 25>;
         };
     };
 
@@ -34,7 +50,7 @@
             //                    | GUI | LWR | ENT |   | SPC | RSE  | @ |
 
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E     &kp R  &kp T      &kp Y      &kp U  &kp I          &kp O     &kp P     &kp LEFT_BRACKET
+&kp GRAVE      &kp Q  &kp W  &kp E     &kp R  &kp T      &kp Y      &kp U  &kp I          &kp O     &kp P     &kp LEFT_BRACKET
 &kp BACKSLASH  &kp A  &kp S  &kp D     &kp F  &kp G      &kp H      &kp J  &kp K          &kp L     &kp SEMI  &kp SQT
 &kp LSHFT      &kp Z  &kp X  &kp C     &kp V  &kp B      &kp N      &kp M  &kp UP         &kp DOWN  &kp LEFT  &kp RIGHT
                              &kp LGUI  &mo 1  &kp RET    &kp SPACE  &mo 2  &kp BACKSPACE
@@ -49,10 +65,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1    &kp N2     &kp N3          &kp N4          &kp N5             &kp N6         &kp N7            &kp N8       &kp N9     &kp N0         &kp BSPC
-&bt BT_CLR  &trans    &trans     &trans          &trans          &trans             &kp LEFT       &kp DOWN          &kp UP       &kp RIGHT  &kp PIPE       &kp DOUBLE_QUOTES
-&kp LSHFT   &kp PLUS  &kp MINUS  &kp UNDERSCORE  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LESS_THAN  &kp GREATER_THAN  &kp PERCENT  &kp EQUAL  &kp AMPERSAND  &kp QUESTION
-                                 &kp LGUI        &trans          &kp SPACE          &kp RET        &trans            &kp RALT
+&kp RA(N8)  &kp RA(N9)  &kp UP_ARROW  &kp RA(RS(N9))  &kp RS(N8)      &kp RS(N5)         &kp N7        &kp N8        &kp N8        &kp N9     &kp LS(N0)     &kp BSPC
+&bt BT_CLR  &kp LEFT    &kp DOWN      &kp RIGHT       &trans          &trans             &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS  &kp PIPE       &kp DOUBLE_QUOTES
+&kp LSHFT   &kp PLUS    &kp MINUS     &kp UNDERSCORE  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp PLUS   &kp AMPERSAND  &kp QUESTION
+                                      &kp LGUI        &trans          &kp SPACE          &kp N0        &trans        &kp RALT
             >;
         };
 
