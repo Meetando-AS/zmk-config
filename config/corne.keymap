@@ -56,6 +56,26 @@
             bindings = <&kp LG(LS(NUMBER_4))>;
             key-positions = <24 25 26>;
         };
+
+        Thirds {
+            bindings = <&kp LA(LS(D))>;
+            key-positions = <33 34 35>;
+        };
+
+        left_half {
+            bindings = <&kp LA(LG(LEFT_ARROW))>;
+            key-positions = <32 33>;
+        };
+
+        right_half {
+            bindings = <&kp LG(LA(RIGHT))>;
+            key-positions = <35 34>;
+        };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <18 19 20>;
+        };
     };
 
     keymap {
