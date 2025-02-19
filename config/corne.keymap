@@ -106,8 +106,8 @@
             bindings = <
 &kp RA(N8)  &kp RA(N9)    &kp UP_ARROW  &kp RA(RS(N8))  &kp RS(N8)  &kp RS(N9)                 &kp N7        &kp N8        &kp N9        &kp KP_MINUS  &kp LS(N0)     &kp BSPC
 &kp ESCAPE  &kp LEFT      &kp DOWN      &kp RIGHT       &kp GRAVE   &kp RS(TILDE)              &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS     &kp PIPE       &kp RA(N7)
-&kp LSHFT   &kp KP_MINUS  &kp MINUS     &kp UNDERSCORE  &kp LS(N7)  &kp RA(RS(RIGHT_BRACE))    &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp PLUS      &kp AMPERSAND  &kp QUESTION
-                                        &kp LGUI        &trans      &kp SPACE                  &kp N0        &trans        &kp RALT
+&kp LSHFT   &kp KP_MINUS  &kp MINUS     &kp UNDERSCORE  &kp LS(N7)  &kp RA(RS(RIGHT_BRACE))    &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS  &kp AMPERSAND  &kp LS(QUESTION)
+                                        &kp LGUI        &trans      &kp SPACE                  &kp N0        &trans        &kp LG(S)
             >;
         };
 
